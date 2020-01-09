@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: clickstream_full
+    description: All rows from the clickstream data
+
+    columns:
+        - name: date_time
+          description: Date time formatted column. Used for time parting.
+          tests:
+              - not_null

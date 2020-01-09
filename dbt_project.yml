@@ -32,10 +32,9 @@ clean-targets: # directories to be removed by `dbt clean`
 models:
     core:
         introduction:
-            materialized: view
+            materialized: table
             vars:
-                customer_id: post_prop30
-                dataset: '`test-r-big-query`.adobe_analytics'
+                dataset: 'adobe_analytics'
                 click_stream_table: click_stream
                 start_date: '2019-10-01'
                 end_date: '2019-12-31'
