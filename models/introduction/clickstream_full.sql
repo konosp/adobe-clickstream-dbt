@@ -7,10 +7,10 @@ SELECT
     , t1.post_visid_low
     , t1.hitid_high
     , t1.hitid_low
-    , exclude_hit
-    , hit_source
-    , post_page_url
-    , post_pagename
+    , t1.exclude_hit
+    , t1.hit_source
+    , t1.post_page_url
+    , t1.post_pagename
 FROM 
     {{ var('dataset') }}.{{ var('click_stream_table') }} as t1
 WHERE 
