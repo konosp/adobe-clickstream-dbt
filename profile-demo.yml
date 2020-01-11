@@ -1,0 +1,12 @@
+adobe-clickstream-bigquery:
+  target: local-dev
+  outputs:
+    local-dev:
+      type: bigquery
+      method: oauth
+      project: <project id> # Google Cloud Porject ID
+      dataset: adobe_analytics_dbt_posts # BigQuery Dataset ID
+      threads: 1
+      timeout_seconds: 300
+      location: EU # One of US or EU
+      priority: interactive
