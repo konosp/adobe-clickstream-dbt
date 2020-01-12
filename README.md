@@ -1,5 +1,5 @@
 # Adobe Analytics Clickstream & dbt on BigQuery
-Basic introduction on building models based on Adobe clickstream data. This repository is complementary to the guide at XXXX.
+Basic introduction on building models based on Adobe clickstream data. This repository is complementary to the guide at https://analyticsmayhem.com/adobe-analytics/clickstream/bigquery-data-models-dbt-sql/.
 
 ## Requirements
 - Load Adobe Analytis Data to BigQuery. This is needed in order to query the data. Also the default naming convention by Adobe is required. For more information on how to load data, check my article https://analyticsmayhem.com/adobe-analytics/data-feeds-google-bigquery/.
