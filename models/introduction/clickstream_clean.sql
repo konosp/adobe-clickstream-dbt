@@ -1,3 +1,5 @@
+{{ config( partition_by='DATE(date_time)' ) }}
+
 SELECT 
     *
 FROM 
