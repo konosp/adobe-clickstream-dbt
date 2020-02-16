@@ -9,4 +9,4 @@ FROM
 WHERE
     post_page_url IS NOT NULL
     AND post_pagename IS NOT NULL
-    AND {{ var('url_path') }} = '/webapp/wcs/stores/servlet/OrderOKView'
+    AND {{ var('url_path') }} = '/order-complete'
