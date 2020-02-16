@@ -18,3 +18,5 @@ FROM
 WHERE 
     date_time >= '{{ var("start_date") }}'
     AND date_time <= '{{ var("end_date") }}'
+
+    {{ incremental_filter() }}

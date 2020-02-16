@@ -4,4 +4,4 @@ dbt_modules/
 logs/
 analysis/
 data/
-macros/
+dbt_project.yml
