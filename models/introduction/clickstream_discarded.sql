@@ -1,4 +1,8 @@
-{{ config( partition_by='DATE(date_time)' , materialized='incremental') }}
+{{ config( 
+        partition_by='DATE(date_time)' ,  
+        materialized='incremental' ,
+        unique_key = 'unique_hit_id' )
+}}
 
 SELECT 
     *

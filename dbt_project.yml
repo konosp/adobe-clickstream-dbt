@@ -36,5 +36,8 @@ models:
             vars:
                 dataset: 'adobe_analytics'
                 click_stream_table: click_stream
-                start_date: '2019-10-01'
-                end_date: '2019-12-31'
+                start_date: '2020-02-15 15:00:00 UTC'
+                end_date: '2020-02-15 15:10:00 UTC'
+        segmentation:
+            materialized: table
+

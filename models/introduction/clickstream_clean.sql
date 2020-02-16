@@ -1,11 +1,8 @@
 {{ config( 
         partition_by='DATE(date_time)' ,  
-        materialized='incremental' ) 
+        materialized='incremental' ,
+        unique_key = 'unique_hit_id' )
 }}
-
-with tmp as (
-    select * from {{ ref('clickstream_discarded') }}
-)
 
 SELECT 
     *
