@@ -6,6 +6,7 @@ SELECT DISTINCT
     , visit_num
     , visit_start_time_gmt
     , {{ var('url_path') }} 
+    , date_time
 FROM
     {{ ref('clickstream_clean') }}
 WHERE

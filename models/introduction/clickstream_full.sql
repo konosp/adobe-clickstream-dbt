@@ -16,6 +16,6 @@ FROM
     {{ var('dataset') }}.{{ var('click_stream_table') }} as t1
 WHERE 
     date_time >= '{{ var("start_date") }}'
-    AND date_time <= '{{ var("end_date") }}'
+    AND date_time < '{{ var("end_date") }}'
 
     {{ incremental_filter() }}
