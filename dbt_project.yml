@@ -40,4 +40,5 @@ models:
                 end_date: '2020-02-15 15:10:00 UTC'
         segmentation:
             materialized: table
+            enabled: false
 

@@ -1,4 +1,6 @@
-{{ config( materialized='ephemeral') }}
+{{ config( 
+    materialized='ephemeral'
+) }}
 
 SELECT 
     t1.date_time
@@ -11,7 +13,6 @@ SELECT
     , t1.post_page_url
     , t1.post_pagename
     , t1.visit_start_time_gmt
-    , t1.{{ var('url_path') }}
 FROM 
     {{ var('dataset') }}.{{ var('click_stream_table') }} as t1
 WHERE 
