@@ -12,9 +12,19 @@ models:
   
   - name: clickstream_clean
     description: Only hits that are included in Adobe Analytics reports are included.
+    columns:
+        - name: unique_hit_id
+          tests:
+            - not_null
+            - unique
     
   - name: clickstream_discarded
     description: Excluded hits from the Adobe Analytics reports. Stored for debugging purposes.
+    columns:
+        - name: unique_hit_id
+          tests:
+            - not_null
+            - unique
 
   - name: daily_visits
     description: Daily visits.

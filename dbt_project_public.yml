@@ -31,13 +31,14 @@ clean-targets: # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
     core:
+        vars:
+            url_path: 'post_propXX'
         introduction:
             materialized: table
             vars:
                 dataset: 'adobe_analytics'
                 click_stream_table: click_stream
-                start_date: '2020-02-15 15:00:00 UTC'
-                end_date: '2020-02-15 15:10:00 UTC'
+                start_date: '2020-02-15 15:45:47 UTC' # Format: YYYY-mm-dd
+                end_date: '2020-02-15 16:45:47 UTC'
         segmentation:
             materialized: table
-

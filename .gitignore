@@ -4,4 +4,5 @@ dbt_modules/
 logs/
 analysis/
 data/
-macros/
+dbt_project.yml
+service_account_key.json
