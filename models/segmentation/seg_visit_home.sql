@@ -1,4 +1,7 @@
-{{ config( partition_by='DATE(date_time)' ,  materialized='incremental' ) }}
+{{ 
+    config( partition_by='DATE(date_time)' ,
+    materialized='incremental'
+) }}
 
 SELECT DISTINCT
     post_visid_high
